@@ -1,0 +1,649 @@
+
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Digital Dentistry and AI Application</title>
+        
+        
+        <script type = "text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,zh-CN',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'translate_button');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+        </script>
+        
+        
+        <script>
+            function show(section) {
+                const news = document.getElementById("news_section")
+                const papers = document.getElementById("papers_section")
+                
+                if (section === 'all') {
+                    news.classList.add("visible");
+                    papers.classList.add("visible");
+                } else if (section === 'news') {
+                    news.classList.add("visible");
+                    papers.classList.remove("visible");
+                } else if (section === 'papers') {
+                    news.classList.remove("visible");
+                    papers.classList.add("visible");
+                }  
+            }
+        </script>
+        
+        
+        <script>
+            function toggle_abstract(id, btn) {
+                const abstract = document.getElementById(id);
+                if (abstract.style.display === 'none') {
+                    abstract.style.display = 'block';
+                    btn.textContent = "▼";
+                } else {
+                    abstract.style.display = 'none';
+                    btn.textContent = "▶";
+                }
+            }
+        </script>
+        
+    </head>
+    <body onload="show('all')">
+        
+        <style>
+            body {
+                background-color: #f7f7f7;
+                font-family: Arial, sans-serif;
+                padding: 20px;
+            }
+
+            h1 {
+                text-align: center;
+                color: #2c3e50;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            li {
+                background-color: white;
+                margin: 10px 80px;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+
+            a {
+                text-decoration: none;
+                color: #3498db;
+                font-size: 18px;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+            
+            h2 {
+                color: #3498db;
+                font-size: 18px;
+            }
+            
+            
+            .content_section {
+                display: none;
+            }
+            
+            .visible {
+                display: block;
+            }
+            
+            #nav_bars {
+                text_align: center;
+                margin-left: 70px;
+            }
+            
+            #nav_bars button {
+                margin: 10px;
+                padding: 12px 24px;
+                font-size: 18px;
+                border: none;
+                background-color: #3498db;
+                color: white;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            
+            #nav_bars button:hover {
+                background-color: #2980b9;
+            }
+        </style>    
+        
+        <div id="translate_button" style="text-align: right; margin-bottom: 10px;"></div>
+        
+        <div id="nav_bars">
+            <button onclick="show('all')">all</button>
+            <button onclick="show('news')">news</button>
+            <button onclick="show('papers')">papers</button>
+        </div>
+        
+        
+        <div class="content_section" id="news_section">
+        
+            <h1>Dentistry Today</h1>
+            <ul>
+                <li>
+                            <button onclick="toggle_abstract('abs1', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/revenuewell-partners-with-mila-health-to-launch-next-gen-ai-powered-assistant/" target="_blank">RevenueWell Partners with Mila Health to Launch Next-Gen AI-Powered Assistant</a><br>
+                            <p id="abs1" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Mila’s AI assistant enhances patient experience with 24/7 service, cuts no-show rates by up to 50%, automates 90% of care management tasks, and drives increased practice revenue. RevenueWell, a leading provider of patient acquisition, engagement software, and digital marketing services for dental practices, has announced a strategic partnership with Mila Health, a pioneer in AI healthcare workers. Together, they are bringing next-generation AI to dental care—introducing a human-like assistant that automates up to 90% of patient care management tasks, boosts operational efficiency, and elevates the patient experience. A New Era of Dental Practice Management The AI-powered assistant integrates directly into RevenueWell’s Patient Engagement Platform, handling complex care tasks like pre-procedure preparation, post-treatment follow-up, medication adherence, symptom monitoring, and dietary guidance. It also manages routine front-office operations, including scheduling, cancellations, and missing patient data collection—freeing up staff to spend more time with patients. Available 24/7 across website and phone channels, the…</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Title: Revolutionizing Dental Practice Management with AI: RevenueWell Partners with Mila Health
+
+In a strategic move, RevenueWell, a leading dental practice management software provider, has teamed up with Mila Health, an innovative AI healthcare company. This partnership aims to introduce cutting-edge AI technology to the dental care sector. The alliance will deploy a human-like assistant that automates up to 90% of patient care tasks, boosting operational efficiency and enhancing the patient experience.
+
+The AI-powered assistant is seamlessly integrated into RevenueWell's Patient Engagement Platform, handling complex tasks such as pre-procedure preparation, post-treatment follow-ups, medication adherence, symptom monitoring, and dietary guidance. It also manages routine front-office operations like scheduling, cancellations, and data collection, freeing up staff to focus on patient care.
+
+The AI assistant is available 24/7 across website and phone channels, helping practices convert inquiries into new patients at any time of day, thereby significantly reducing no-show rates, increasing patient intake, and improving treatment acceptance.
+
+Katherine Shuman, CEO of RevenueWell, stated, "We are leaders in modernizing oral care...with this launch, we are bringing next-generation AI tools to our customers." Shailu Verma, CEO and co-founder of Mila Health, emphasized that the partnership accelerates their mission to deliver scalable, personalized care through AI.
+
+RevenueWell serves 11,200 thriving dental practices, offering comprehensive digital marketing services and patient engagement software. Mila Health is focused on addressing the shortage of healthcare workers as the U.S. population ages by building the next generation of AI healthcare workers to support, not replace, providers.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs2', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/weave-communications-acquiring-ai-powered-front-office-platform-truelark/" target="_blank">Weave Communications Acquiring AI-Powered Front Office Platform TrueLark</a><br>
+                            <p id="abs2" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Acquisition to expand Weave’s footprint in multi-location practices An acquisition announced today will expand Weave Communications’ footprint in multi-location dental and medical practices, where demand for intelligent automation is accelerating amid staffing shortages and operational obstacles. Weave, a leading all-in-one customer experience and payments software platform for small and medium-sized healthcare businesses (SMBs), has signed an agreement and plan of merger to acquire TrueLark, an AI-powered receptionist and front-desk automation platform. This strategic acquisition will bring together Weave’s category leadership in healthcare communications with TrueLark’s agentic AI capabilities, unlocking a future of autonomous, intelligent workflows that transform how practices operate, engage patients, and grow revenue. “TrueLark represents more than a new product, the acquisition positions Weave at the forefront of agentic AI in SMB healthcare. Their purpose-built, AI-first platform brings autonomous, always-on functionality to core front-office operations,” said Brett White, CEO of Weave, in today’s press release. “The acquisition will deliver…</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Weave Communications has announced an acquisition of TrueLark, an AI-powered receptionist platform, to expand its footprint in multi-location dental and medical practices. The move aims to address the increasing demand for intelligent automation amid staffing shortages and operational challenges in the healthcare sector. By combining Weave's leadership in healthcare communications with TrueLark's AI capabilities, they aim to create autonomous, intelligent workflows that transform practice operations and patient engagement.
+
+The acquisition will bring a virtual assistant that can fill more appointments, improve responsiveness, and drive stronger patient engagement, all without increasing headcount. TrueLark's platform uses conversational AI to manage missed calls, text messages, and web chats for appointment scheduling, after-hours communication, and automating administrative tasks.
+
+The combined entity will address the gap between patient requests and front-office availability, offering benefits such as filling more appointments, higher patient engagement, scalable efficiency for DSOs, reduced burnout, and administrative burden. With an estimated $10 billion domestic and $22 billion international market potential, Weave and TrueLark are poised to lead the category and deliver exceptional ROI to customers through autonomous front-desk operations. The deal is expected to close in the second quarter of 2025 for $35 million, with additional performance-based awards for key personnel. This move reinforces Weave's position as an intelligent operating system for healthcare practices, expanding its platform to include always-on, AI-powered agents.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs3', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/ormco-and-dentalmonitoring-strengthen-integration-tools/" target="_blank">Ormco and DentalMonitoring Strengthen Integration Tools</a><br>
+                            <p id="abs3" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">DentalMonitoring, the global leader in AI-powered remote monitoring solutions for orthodontics, is proud to expand its Partnership Program in collaboration with Ormco™ Corporation, a global leader in orthodontic solutions for over 60 years, launching at the AAO 2025 Annual Session. Under this program—supported by Ormco and designed to make remote monitoring with DentalMonitoring accessible to a much broader Ormco customer base—Ormco providers in North America using DentalMonitoring will benefit from 25% savings on monitoring fees for all newly started Ormco cases across all appliances, including Spark Clear Aligners and Ormco's bracket systems, including Damon Ultima. “As the orthodontic industry evolves, our goal is to make remote monitoring accessible, impactful, and financially sustainable for every practice,” said Philippe Salah, CEO of DentalMonitoring. “Our partnership with Ormco brings doctors powerful clinical tools and meaningful savings.” Continued Integration: Streamline Refinements and Retainers with Smart STL Ormco customers will continue to have access to a streamlined refinement and retainer workflow for Spark…</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">DentalMonitoring, a global leader in AI-powered remote monitoring solutions for orthodontics, has announced an expansion of its Partnership Program with Ormco Corporation, a 60-year veteran in orthodontic solutions. This collaboration will provide Ormco providers in North America using DentalMonitoring with 25% savings on monitoring fees for all newly started Ormco cases across various appliances.
+
+The partnership also includes the integration of DentalMonitoring's platform with Spark™ Approver Software, allowing orthodontists to request refinements or retainers without additional scans. This integration, known as Smart STL, generates a production-ready STL file, enhancing operational efficiency and patient convenience.
+
+The expanded partnership will be showcased at the AAO 2025 Annual Session, with more details available on DentalMonitoring's and Ormco's websites. DentalMonitoring is a leading remote monitoring solution in orthodontics, while Ormco is a global family of dental brands focused on improving lives through innovation and partnership with professionals.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs4', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/grin-showcases-innovation-at-aao-2025/" target="_blank">Grin Showcases Innovation at AAO 2025</a><br>
+                            <p id="abs4" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Grin, the leading virtual care platform for digital oral healthcare solutions, is ushering in the next era of orthodontics with the debut of its new Grin Ecosystem: Grin Care, Growth, Thrive at the 2025 AAO Annual Session in Philadelphia. The launch will enable practices to deliver personalized care, grow their business, and operate more efficiently in the evolving landscape of oral healthcare. New features include Grin CoPilot, RapidReferral, AI Treatment Tracking, and other enhanced AI-enabled tools, and a new integration with Clarity by Solventum, which together create a scalable, patient-first platform. “At Grin, we believe the future of orthodontics is about more than digitization; it’s about transformation,” said Dr. Adam Schulhof, CEO and co-founder of Grin. “We’re giving doctors smarter tools, faster insights, and clinical precision to care for patients, grow their practice, and thrive in a rapidly evolving industry without ever sacrificing a personalized, human-first experience that makes patient…</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">At the 2025 AAO Annual Session in Philadelphia, Grin, a leading virtual care platform for digital oral healthcare solutions, unveiled its new Grin Ecosystem: Grin Care, Growth, Thrive. This ecosystem aims to help orthodontic practices deliver personalized care, grow their business, and operate efficiently in the rapidly evolving oral healthcare landscape.
+
+New features include Grin CoPilot, an AI-powered tool that automates routine tasks and delivers real-time clinical insights for care with less complexity. RapidReferral, a system for seamless patient association between Grin and Clarity by Solventum, and Grin Hygiene+, a feature tracking oral hygiene scores over time to drive better habits and improve patient accountability.
+
+Additionally, the updated patient app offers an enhanced mobile experience, empowering patients to take a more active role in their orthodontic journey. The redesigned Grin Doctor Portal features improved navigation, a centralized notification center, internal patient chat, and upcoming practice-wide chat functionality.
+
+Grin will also be featured at the TechSelect Innovation Pavilion, presenting live during TechSelect LIVE on Saturday, April 26th, showcasing digital orthodontic care innovations. Visitors can connect with Grin Providers, learn from the Chief Technology Officer and Head of Product, and experience the future of virtual care at booth #935. An on-demand replay of the AAO showcase will be available for those unable to attend.
+
+Grin is a comprehensive digital platform that provides solutions for all oral health needs, enabling remote monitoring of patients via virtual check-ins for complete visibility and reducing chair time while increasing patient volume and ensuring safety and beautiful smile results. For more information about Grin, visit www.get-grin.com.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs5', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/dentscribe-ai-revolutionizes-dental-note-taking/" target="_blank">DentScribe.ai Revolutionizes Dental Note-Taking</a><br>
+                            <p id="abs5" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Imagine finishing a dental procedure and seeing a complete, polished clinical note instantly appear in your system—no typing, no correcting. DentScribe.ai is making this a reality with its advanced AI-powered SOAP note generator that understands even the most complex dental jargon. Built by dentists for dentists, the DentScribe.ai platform listens to providers' natural clinical narratives and produces hyper-accurate SOAP notes in real time, often requiring virtually zero editing. The moment an appointment ends, the finalized notes are already published to the practice's management software, allowing dentists to focus on patients instead of paperwork. DentScribe - Perfect SOAP Notes, Instantly DentScribe's new AI engine is uniquely trained in dental terminology—from common terms like </p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Title: DentScribe.ai - Revolutionizing Dental Documentation with AI
+
+DentScribe.ai is an advanced Artificial Intelligence (AI) platform designed to streamline dental documentation processes. Its AI-powered SOAP note generator understands complex dental jargon, transcribing and interpreting dentist-specific language in real time. The system adapts to each dentist's unique style, ensuring the output notes sound as if written by the dentist themselves.
+
+The platform also generates patient-friendly summaries and post-operative instructions on the fly, improving communication with patients. It integrates seamlessly with major dental practice management software like Dentrix, Eaglesoft, or OpenDental, requiring minimal setup and training.
+
+DentScribe.ai offers significant time savings by automating end-of-day charting, allowing dentists to focus on patient care. The system is customizable through a new client portal, allowing practices to tailor the AI's understanding of specific terms, templates, or procedures.
+
+Early users praise DentScribe.ai for its dentistry-specific capabilities, accurate documentation, and ease of integration into existing workflows. The all-in-one subscription model offers incredible value, with no hidden fees or per-provider charges. DentScribe's mission is to let dentists focus on dentistry, not documentation, revolutionizing the dental documentation experience. Interested parties can book a live demo at dentscribe.ai/book-a-demo to explore how DentScribe.ai can transform their practice.
+
+DentScribe.ai is a product of SuhaviAI, Inc., a company founded by dentist Dr. Vinni K. Singh, leveraging artificial intelligence to address real-world challenges in dental practice management. The platform serves dentists and specialists across the United States and internationally, enhancing efficiency, accuracy, patient care, and practice productivity.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs6', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/rondah-ai-secures-1-8m-pre-seed/" target="_blank">Rondah AI Secures $1.8M Pre-Seed</a><br>
+                            <p id="abs6" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Rondah AI, the AI platform purpose-built for dental service organizations (DSOs), has announced a $1.8 million pre-seed funding round co-led by 2048 Ventures and Twelve Below. Rondah AI provides sophisticated AI agents to capture missed revenue, reduce staffing burdens, and radically improve the patient experience for DSOs. By doing so, Rondah AI gives DSOs a new level of operational leverage—practices using Rondah have completely eliminated missed calls and doubled their monthly appointment bookings. Rondah AI is deploying across hundreds of practices with some of the largest DSOs in North America. Customers rely on Rondah 24/7, and usage continues to grow across the U.S. and Canada. The new funds will be used to expand the platform’s capabilities — including outbound recalls, insurance processing, billing and payments, persistent memory, treatment planning, and support for more languages and communication modalities. “When dental offices miss calls, they miss new patients and revenue—and that problem’s…</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Rondah AI, an AI platform designed for dental service organizations (DSOs), has secured $1.8 million in pre-seed funding led by 2048 Ventures and Twelve Below. The platform aims to increase revenue, reduce staffing burdens, and enhance the patient experience for DSOs. It currently eliminates missed calls and doubles monthly appointments for practices using it.
+
+Rondah AI is being used by hundreds of practices associated with large North American DSOs, with usage expanding across the U.S. and Canada. The newly raised funds will be utilized to enhance platform capabilities, including outbound recalls, insurance processing, billing and payments, treatment planning, and support for multiple languages and communication modalities.
+
+Founded by longtime friends Burhan Syed (CEO), Allan Svirsky (CPO), and Mohammed Mian (CTO), Rondah AI is solving a problem they experienced while working in dental practices - missed calls leading to lost patients and revenue. The platform, which automates administrative processes like scheduling appointments, is already trusted by leading DSOs across North America.
+
+2048 Ventures, an early-stage venture capital firm investing in deep tech, software infrastructure, healthcare, techbio, and general B2B platforms, led the investment. Twelve Below, a seed-stage fund seeking founders with breakthrough ideas for defensible, software-enabled businesses, also participated. The team's intimate understanding of the dental industry gives them an edge in solving these problems effectively.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs7', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/breaking-the-mold-3-ways-dsos-can-boost-profitability-in-2025/" target="_blank">Breaking the Mold: Three Ways DSOs Can Boost Profitability in 2025</a><br>
+                            <p id="abs7" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">By Eric Giesecke, CEO of Planet DDS The dental industry has long operated on outdated systems and software that are fundamentally broken, siloed, and inefficient. These legacy systems may have served dental service organizations (DSOs) in the past, but they now hinder growth, disrupt workflow, and fall short of meeting the needs of modern DSOs, their teams, and patients—all of which are a major roadblock to increasing profitability.  For DSOs to achieve profitability and growth in 2025, it's time to challenge old assumptions and embrace new approaches that improve efficiency and patient engagement. Here are three powerful strategies to help DSOs move beyond outdated practices and adopt forward-thinking solutions that will add more to your bottom line. 1. Adopt an Open API, Integrated Tech Ecosystem Approach One of the biggest challenges to more financial success is the continued reliance on disconnected systems that don’t “talk” to each other. When scheduling,…</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Title: Embracing Modern Solutions for Dental Service Organizations (DSOs) to Increase Profitability by 2025
+
+Author: Eric Giesecke, CEO of Planet DDS
+
+In an outdated dental industry, dental service organizations (DSOs) are hindered by legacy systems that disrupt workflow and fall short of meeting modern demands. To achieve growth and profitability in 2025, three key strategies can help DSOs move beyond these practices:
+
+1. Open API and Integrated Tech Ecosystem Approach: A connected ecosystem addresses the pain points caused by disconnected systems, leading to increased efficiency, productivity, and patient satisfaction. With APIs, DSOs have the flexibility to choose custom solutions based on their needs without being confined to one system's limitations.
+
+2. Data-Driven Decision Making: To harness data’s potential, DSOs should adopt platforms with powerful analytics that integrate data across multiple systems, empowering them to make proactive decisions and drive actionable insights. This can lead to significant improvements in the bottom line by identifying patterns in no-shows and implementing automated reminders, among other efficiencies.
+
+3. Prioritize Patient Experience: A focus on the patient journey from appointment scheduling to post-visit follow-ups leads to higher retention and referrals. An open API platform enables a holistic view of the journey, resulting in streamlined workflows, increased productivity, and loyal patients.
+
+In conclusion, DSOs must adopt modern approaches that leverage open technology, data insights, and patient-centered service to improve operational efficiency, stay competitive, and unlock new levels of healthy cash flow.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs8', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/ids-2025-aizac-transforms-dental-documentation/" target="_blank">IDS 2025 – AIzac Transforms Dental Documentation</a><br>
+                            <p id="abs8" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Experience the future of dental documentation with AIzac, unveiled at IDS 2025! AIzac’s cutting-edge AI PerioNote automates periodontal charting with voice recognition, while AI CareNote simplifies free-form patient documentation. No more manual note-taking—just seamless, real-time transcription and intelligent summaries. This game-changing technology enhances efficiency, allowing dental professionals to focus on patient care instead of paperwork. Watch the demo to see how AIzac is transforming the dental industry with AI-driven innovation! https://youtu.be/qmoMasl002E</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">At IDS 2025, a groundbreaking AI solution named AIzac was unveiled, revolutionizing dental documentation. The PerioNote AI automates periodontal charting through voice recognition, and the AI CareNote simplifies free-form patient documentation, eliminating manual note-taking by providing real-time transcription and intelligent summaries. This technology enhances efficiency, enabling dental professionals to concentrate on patient care rather than paperwork. A demonstration showcases how AIzac is reshaping the dental industry with its AI-driven innovations.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs9', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/new-exocad-ai-services-debut-at-ids-2025/" target="_blank">New exocad AI Services Debut at IDS 2025</a><br>
+                            <p id="abs9" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">exocad, an Align Technology, Inc. company and a leading dental CAD/CAM software provider, showcased its latest developments with new AI-enabled services, the upcoming Chemnitz release cycle, and a new concept of minimally invasive dentistry at the International Dental Show (IDS) 2025, Hall 1, Booth A040/C041. The software company unveiled its new testimonial campaign, featuring six renowned dental professionals and dedicated exocad users, and invited interested attendees to try out the latest software features and releases at interactive, test-and-try “ArCADe” stations. Visitors attended lectures from dental leaders and received software demos from exocad application specialists. exocad showcased its latest developments with new AI-enabled services, the upcoming Chemnitz release cycle, and a new concept of minimally invasive dentistry at booth A040/ C041, hall 1.  “At IDS, we enjoyed showing visitors the innovative AI-enabled services we’ve designed to enhance productivity and craft compelling smile makeover visualizations that patients value,” said exocad CCO and…</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">At the International Dental Show (IDS) 2025, Exocad, an Align Technology Inc. company, presented its latest advancements in dental CAD/CAM software, including new AI-enabled services, a minimally invasive dentistry concept, and the upcoming Chemnitz release cycle. The booth showcased new products such as DentalCAD 3.2 Elefsina Feature Release highlights, which include TruSmile Video, TruSmile Photo, and AI Design services. These services can be accessed using exocad Credits, which users can purchase through the exocad webshop or resellers.
+
+Exocad also offered insights into its new approach combining restorative and orthodontic dentistry, emphasizing minimal invasiveness to preserve tooth structure. The company highlighted collaboration between clinics and labs as crucial for digital dentistry transformation.
+
+Visitors had the opportunity to purchase T-shirts to support a dental charity and celebrate exocad's 15th anniversary, with daily "purple hour" events marking the occasion. The event also featured the popular dentistry podcast "Voices from the Bench."
+
+For more information, visit exocad.com/ids. Early access to TruSmile Video and TruSmile Photo is now available for EU and US users of DentalCAD 3.2 Elefsina (Build 9036 or later), with my.exocad integration and the Smile Creator Module. Similarly, early access to AI Design is also available for the same user group. Exocad's releases are named after current EU "European Capitals of Culture."</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs10', this)">▼</button>
+                            <a href="https://www.dentistrytoday.com/bundy-family-dentistry-adopts-ai-assistance/" target="_blank">Bundy Family Dentistry Adopts AI Assistance</a><br>
+                            <p id="abs10" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Bundy Family Dentistry has teamed up with Brown Bacon AI, a leader in generative AI technology, to become the first medical practice to implement AI-driven pre- and post-operative patient assistance. Brown Bacon's patent-pending, HIPAA-compliant AI Mee solution is now live at Bundy Family Dentistry, setting a new standard for patient care and operational efficiency in healthcare. </p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Bundy Family Dentistry has partnered with Brown Bacon AI, a leading company in generative AI technology, to become the first medical practice to utilize AI for pre- and post-operative patient assistance. The HIPAA-compliant AI Mee solution by Brown Bacon is now operational at Bundy Family Dentistry, offering round-the-clock access to information about procedures and recovery. This collaboration sets a new standard for healthcare, combining knowledge with efficiency.
+
+Tony Arnold, CEO of Brown Bacon AI, expressed excitement about the partnership, stating that the AI solution addresses the growing demand for more patient and staff knowledge. The Social-Sizzle platform, integrated into Bundy Family Dentistry's operation, provides an autonomous social media presence for the practice.
+
+Dr. Robert Bundy shared his enthusiasm, emphasizing the commitment to delivering cutting-edge technology in patient care. Aimee Arnold from Brown Bacon AI highlighted Bundy Family Dentistry's history of innovation and welcomed the opportunity to enhance their care with real-time guidance and resources.
+
+The partnership between these two entities underscores the potential of AI to improve healthcare services and practice efficiency, inviting other practices to join the AI revolution by visiting Brown Bacon's website for more information and scheduling a demo.</p>
+                </li>
+
+            </ul>
+    
+            <h1>ADA News</h1>
+            <ul>
+                <li>
+                            <button onclick="toggle_abstract('abs11', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/a-look-at-dental-x-ray-radiation-safety-and-recommendations/" target="_blank">A look at dental X-ray radiation: Safety and recommendations</a><br>
+                            <p id="abs11" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Dental X-rays are safe and expose patients to low levels of radiation, even less than what an individual is exposed to in the environment. </p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The article "A look at dental X-ray radiation: Safety and recommendations" by ADA Huddles discusses the safety of dental X-rays. According to experts like Erika Benavides, D.D.S., Ph.D., dental X-rays expose patients to low levels of radiation, even less than environmental exposure, and are crucial in detecting oral health issues. The ADA and American Academy of Oral and Maxillofacial Radiology updated their recommendations, stating that protective aprons and collars are no longer necessary during dental X-rays. The panel also confirmed the safety of dental X-rays for pregnant women and their fetuses, with exposure levels being 30,000 times lower than harmful thresholds. The article highlights that dental X-ray radiation is significantly safer compared to three decades ago. This summary provides a broader media perspective on dentistry, but it does not imply the ADA's endorsement or agreement with its content.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs12', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/ai-for-virtual-implant-placement/" target="_blank">AI for virtual implant placement</a><br>
+                            <p id="abs12" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">A novel artificial intelligence-based tool could help improve implant placement.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Title: AI for Virtual Implant Placement
+
+In a study published by Clinical Oral Implants Research, researchers explored an AI-based tool for enhancing implant placement accuracy and efficiency. Compared to human intelligence-based approaches, the novel AI model exhibited similar clinically acceptable implant planning with comparable implant dimensions. The AI model notably reduced planning time significantly and demonstrated higher consistency than implant clinicians. The research suggests that this innovative AI approach could potentially improve implant placement practices. Note that the ADA does not endorse or promote the content of the article, as its publication does not necessarily align with the ADA's stance on broader media perspectives in dentistry. Read more about the study at Clinical Oral Implants Research.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs13', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/how-digital-technologies-are-changing-the-dental-landscape/" target="_blank">How digital technologies are changing the dental landscape</a><br>
+                            <p id="abs13" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Digital dentistry is revolutionizing the dental profession. </p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The article by ADA Huddles discusses how digital technologies are transforming the dental landscape. Digital dentistry, including AI models, digital radiographic imaging, intraoral 3D scanning, and 3D printing, are improving diagnostics, treatment planning, office management, and patient care. These technologies increase efficiency and cost-effectiveness by expediting restoration development, enhancing quality, enabling personalized care, and reducing costs for both dentists and patients.
+
+The article further mentions that digital dentistry has improved communication among dentists, interdisciplinary collaboration, and patient decision-making. It also predicts future advancements in robotic surgery for implants and more extensive use of AI to detect and diagnose dental issues. However, the authors emphasize the need for proper training to equip dentists with the necessary skills to utilize these novel digital tools effectively. The article does not necessarily represent the ADA's endorsement or agreement with its content.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs14', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/streamlining-dental-implant-placement-with-immersive-reality-technology/" target="_blank">Streamlining dental implant placement with immersive reality technology</a><br>
+                            <p id="abs14" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Immersive reality could assist clinicians with dental implant placement.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">This article by ADA Huddles discusses the potential application of immersive reality technology in dental implant placement. The study used two types of immersive reality technologies: augmented reality with a head-mounted display and mixed reality with a see-through tablet display. The findings suggest that both methods could lead to less invasive surgery, avoid iatrogenic damage, and potentially increase accuracy. However, the mixed reality method requires optimization before it can be widely implemented due to issues like software performance interferences during surgery and the need for continuous re-registration. The augmented reality method was found to offer advantages such as convenient access to patient data in a sterile environment but could cause spatial discordance. Overall, the use of immersive reality technologies could pave the way for innovative dental applications. It's worth noting that the publication of this article does not imply the ADA's endorsement or agreement with its content.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs15', this)">▼</button>
+                            <a href="https://adanews.ada.org//ada-news/2025/february/what-are-the-standards-for-ai-use-in-dentistry/" target="_blank">What are the standards for AI use in dentistry?</a><br>
+                            <p id="abs15" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The growing use of AI in dentistry has led to an increased need for guidance to ensure the technology is used responsibly.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The article discusses the growing use of Artificial Intelligence (AI) in dentistry, and the need for guidelines to ensure its responsible application. Robert Faiella, D.M.D., chair of ADA Standards Working Group 12.7 on Artificial and Augmented Intelligence in Dentistry, emphasizes the importance of adhering to established standards and keeping abreast of evolving best practices to maximize AI's potential while maintaining ethical and professional obligations.
+
+The American Dental Association (ADA) has published several documents to provide guidance on AI in dentistry. These include:
+
+1. ADA White Paper No. 1106:2022, outlining the use of AI in various dental disciplines and addressing regulatory concerns.
+2. ADA Technical Report No. 1109:2025, highlighting the need for an independent dataset to validate AI algorithms used to analyze dental images.
+3. ANSI/ADA Standard No. 1110-1:2025, providing standardized criteria for annotating and collecting data from 2D radiographs for clinical decision-making.
+4. ISO 18374 Dentistry — Artificial Intelligence (AI) and Augmented Intelligence (AuI) Based 2D Radiograph Analysis, which outlines requirements for developing AI software used in dental radiograph analysis.
+
+These standards aim to ensure the safe, effective, and equitable use of AI in dentistry by providing criteria for safety, efficacy, transparency, and fairness in evaluating and integrating AI systems into practice. To access these ADA documents, visit ADA.org/dentalstandards.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs16', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/occlusal-appliance-fabrication-optical-vs-conventional-tracking-devices/" target="_blank">Occlusal appliance fabrication: Optical vs. conventional tracking devices</a><br>
+                            <p id="abs16" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Researchers have examined whether optical tracking devices could be more accurate compared with conventional tracking devices.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">In a study published in the Journal of Prosthodontics, researchers compared the accuracy of optical tracking devices versus conventional tracking devices for fabricating occlusal appliances. The study involved 12 patients over 25 years old, and each participant received an occlusal appliance designed using one of the three methods. Optical tracking devices showed lower discrepancies in contact points at static occlusion compared to conventional tracking devices or average articulator values. For dynamic occlusion, optical tracking outperformed both other methods, demonstrating no interferences during protrusive movement. These findings suggest that using optical tracking devices could potentially improve treatment efficacy and clinical outcomes for patients, but it's important to note that the ADA does not endorse or promote the content of every published article.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs17', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/digital-vs-conventional-impressions-in-maxillary-edentulism/" target="_blank">Digital vs. conventional impressions in maxillary edentulism</a><br>
+                            <p id="abs17" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Digital impressions may offer similar benefits in patients with maxillary complete edentulism compared with conventional impressions.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">In the study titled "Digital vs. conventional impressions in maxillary edentulism" published by BMC Oral Health, researchers compared digital and traditional impression techniques for patients with maxillary complete edentulism. The study involved 15 participants who received tissue-supported dentures. The study aimed to determine if intraoral scanners (with or without AI) or conventional methods provided faster, more cost-effective, and reliable impressions.
+
+The researchers found that while the mean border deviation was significant in the two-step and one-step conventional groups, there were no statistically significant differences between other groups, indicating the accuracy of digital approaches. This highlights the potential clinical applications of digital impressions for this specific patient population. However, it's important to note that the publication of an article does not necessarily imply the ADA's endorsement or agreement with its content.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs18', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/intraoral-scanners-may-improve-detection-of-dental-restoration-deterioration/" target="_blank">Intraoral scanners may improve detection of dental restoration deterioration</a><br>
+                            <p id="abs18" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Researchers have compared the accuracy of intraoral scanners with visual assessment when measuring the wear of dental materials.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The article "Intraoral scanners may improve detection of dental restoration deterioration" by ADA Huddles discusses a study comparing the accuracy of intraoral scanners and visual assessments in measuring the wear of dental materials. Over a period of one year, researchers evaluated glass ionomer restorative material wear in 36 patients using either intraoral scanners or visual assessment. The results showed that the intraoral scanners were more effective and accurate at detecting details of wear compared to visual assessments, suggesting they could aid in earlier diagnoses. The study was published in the Journal of Dentistry and the findings support integrating intraoral scanners into dental material assessments. However, it's crucial to note that the ADA does not endorse or agree with all content published on this subject.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs19', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/tackling-gaps-in-peri-implantitis-detection-with-deep-learning-model/" target="_blank">Tackling gaps in peri-implantitis detection with deep-learning model</a><br>
+                            <p id="abs19" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">A deep-learning model could help physicians identify peri-implantitis on orthopantomographs.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The article discusses a study published in the Journal of Evidence-Based Dental Practice that utilizes a deep-learning model to aid dentists in identifying peri-implantitis on orthopantomographs. The researchers used a deep-learning-based approach, applying a convolutional neural network to 7,696 images to distinguish healthy implants from those with peri-implantitis. The model showed high accuracy, with an accuracy of 0.999, Dice Similarity Coefficient of 0.986, and Intersection over Union of 0.974. Among the 3,693 implants studied, the deep-learning model successfully identified 576 cases of peri-implantitis. These findings could potentially enhance diagnostic accuracy and treatment planning for peri-implantitis. It's important to note that publication of this article does not necessarily imply endorsement or agreement from the ADA.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs20', this)">▼</button>
+                            <a href="https://adanews.ada.org//huddles/using-coded-healing-abutment-in-dental-restorations/" target="_blank">Using coded healing abutment in dental restorations</a><br>
+                            <p id="abs20" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">A coded healing abutment system could streamline the digital workflow in patients with dental restorations.</p>
+                            <h2>AI Summary</h2>
+                            <p style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The article "Using Coded Healing Abutment in Dental Restorations" by ADA Huddles suggests a potential improvement in dental restoration processes through the use of coded healing abutments. A study involving 103 patients with zirconia restorations, published in the Journal of Dentistry, found that the novel coded healing abutment system resulted in high satisfaction scores, positive marginal fits, effective occlusal and interproximal contacts, excellent hard and soft tissue stability, and few complications. The researchers noted a high overall restoration success rate, indicating the reliability and precision of the new system. However, they suggested that further studies with larger patient populations and longer follow-up periods are needed to confirm these findings. It's important to note that the publication of this article does not imply endorsement or agreement from the American Dental Association.</p>
+                </li>
+
+            </ul>
+    
+        </div>
+        
+        <div class="content_section" id="papers_section">
+
+            <h1>Semantic Scholar</h1>
+            <ul>
+                <li>
+                            <button onclick="toggle_abstract('abs21', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/97570bad823057688c210fff7f98cdc5427851a2" target="_blank">The Core of Digital Dentistry: Intraoral Scanners.</a><br>
+                            <small style="color: #333;">F. Eggmann, M. B. Blatz | 2024</small><br>
+                            <p id="abs21" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">No abstract available</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs22', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/ced30d40d14475ac36dbaf0246a9be84419a0d54" target="_blank">The Evolution of Digital Dentistry: A Comprehensive Review</a><br>
+                            <small style="color: #333;">Nishad Gawali, Priti P. Shah, I. Gowdar, Kevalkumar A. Bhavsar, Debanti Giri, Rashmi Laddha | 2024</small><br>
+                            <p id="abs22" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">ABSTRACT Digital dentistry has revolutionized the traditional practice of dentistry, offering new tools and technologies that enhance diagnosis, treatment, and patient care. This comprehensive review explores the evolution of digital dentistry, its role in modern dental practice, and the advantages, limitations, and future prospects. By examining the current state of digital dentistry, this review aims to provide insights into its transformative impact on dental healthcare.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs23', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/0853b59585bfe2aa75f2ff898180f5970bb63e3a" target="_blank">A bibliometric analysis of scientific literature in digital dentistry from low- and lower-middle income countries</a><br>
+                            <small style="color: #333;">Samira Adnan, Abhishek Lal, N. Naved, F. Umer | 2024</small><br>
+                            <p id="abs23" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Objective Bibliometric analysis and citation counts help to acknowledge influence of publications. The aim of this study was to conduct bibliometric and citation analysis of top-cited articles, from low- and lower-middle income countries, on use and application of digital technology in dentistry. Methodology A search strategy based on “Digital Dentistry”, “Low Income Countries”, and “Lower-Middle Income Countries” was used in October 2023 using Scopus database to retrieve articles relevant to digital dentistry, with citation count of 10 or more. From 44 included articles, bibliometric information was analyzed on SPSS version 23. Network analysis based on co-citations, keywords, and number of citations was conducted on VOS software (version 1.6.20). Results Most relevant articles were published in 2021 ( n  = 8), with 52.3% original articles, out of which 40.9% were in vitro studies. India had the highest number of articles ( n  = 24), with most publications in The Journal of Indian Prosthodontic Society ( n  = 4), and in the domain of General Dentistry ( n  = 15, 34.1%). Co-authorship network analysis was not significant, but country-wise co-authorship analysis revealed India with the greatest link strength (4.0). Highest occurring keyword was 3D printing (link strength 5.0), and the citation analysis revealed Journal of Prosthetic Dentistry with the most number of published documents (3), having a citation count of 275. Bibliographic coupling for sources revealed Journal of Indian Prosthodontic Society to have the highest link strength of 15.33. Conclusion This analysis uncovers interesting bibliometric and citation based information including key thematic trends, emphasizing crucial role of technologies like 3D printing, CAD/CAM, and CBCT in digital dentistry. The study underscores the imperative for increased original research efforts in low- and lower middle-income countries.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs24', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/7d5f2ce1247f16f4b86f6c06e869f8a9541a8d15" target="_blank">The Impact of Technology Teaching in the Dental Predoctoral Curriculum on Students’ Perception of Digital Dentistry</a><br>
+                            <small style="color: #333;">L. Nassani, S. Bencharit, Fernanda L. Schumacher, Wei-En Lu, Rodrigo Resende, G. Fernandes | 2024</small><br>
+                            <p id="abs24" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The goal was to assess dental students’ perception of digital technologies after participating in a CAD/CAM exercise for scanning, designing, and manufacturing computer-aided provisional fixed dental restorations. A survey was conducted among second- (pre-D2 and post-D2), first- (D1, negative control), third-, and fourth-year dental students (D3 and D4, positive controls). Only OSU College of Dentistry students who completed the activity and completed the surveys were included. Seven questions were rated, which evaluated changes in knowledge, skill, interest, the importance of technology availability in an office, patients’ perception of technology, the importance of having the technology, and the expected frequency of clinics utilizing the technology. Statistical analysis was performed with a significance level of 0.05. A total of 74 pre-D2 and 77 post-D2 questionnaires were completed. Additionally, 63 D1, 43 D3, and 39 D4 participants responded to the survey. Significant differences were found for “knowledge” and “skill” between the pre-D2 and post-D2 and pre-D2 and control groups (p < 0.001). There was a significant difference between the post-D2 participants and all the controls in terms of “interest” (p = 0.0127) and preference for in-practice technology availability (p < 0.05). There were significant results between the post-D2 participants and all the controls regarding the importance of technology availability in an office (p < 0.001) and the expected frequency of clinics utilizing the technology (p = 0.01). No significance was found for “value of technology to patients” and “the importance of having the technology”. The presence of technology in practice and in educational academic environments significantly improved students’ interest and perception of their knowledge and skill.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs25', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/d8e9d0576ec7c708cfec1385d2d2eff7e5f7002e" target="_blank">Digital Dentistry: Transformation of Oral Health and Dental Education with Technology</a><br>
+                            <small style="color: #333;">Z. Khurshid | 2023</small><br>
+                            <p id="abs25" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Without a doubt, dentistry is quickly modernizing and transitioning to digital technology. In the past, taking dental impression, making dental models, and assembling dental laboratory prostheses took a lot of time. However, the advent of the intraoral scanner, digital radiography, computer-aided design (CAD)/computer-aided manufacturing (CAM), 3D printers, and artificial intelligence (AI) software revolutionized the field of dentistry as we know it today.1–3 Precision and accuracy are two of digital dentistry’s key benefits. Cone beam computed tomography (CBCT) and digital radiography are two examples of digital imaging technologies that enable dentists to get extremely precise and detailed pictures of the teeth and surrounding tissues.3 The utilization of these data allows for very precise and predictable treatment planning and execution. The effectiveness and quickness with which dental restorations may be made is another advantage of digital dentistry. With the use of CAD/CAM technology, dental restorations may be designed and created in a single session, doing away with the need for further visits and interim restorations.4 Increased precision and accuracy, quicker production times, and more personalization options are all benefits of digital dentures. They also eliminate the requirement for traditional impression materials, which some patients could find painful.5 Due to their reduced waste generation and resource usage, digital dentures may also be more ecologically friendly than conventional ones.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs26', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/45dddd24f4274b89c0ea78ac10eec3977cafd2f2" target="_blank">The 4D virtual patient: A proof of concept in digital dentistry.</a><br>
+                            <small style="color: #333;">Luca Lepidi, Byung Chan Kim, Lorenzo Giberti, Carmela Suriano, Junying Li, F. Grande | 2024</small><br>
+                            <p id="abs26" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">No abstract available</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs27', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/fef05902d56c65f615731589e352bd6d77968c56" target="_blank">Digital Dentistry: Past, Present, and Future</a><br>
+                            <small style="color: #333;">Z. Haidar | 2023</small><br>
+                            <p id="abs27" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Today, digital dentistry has revolutionized the way dental professionals provide patient care. It refers to the use of digital technologies in all aspects of dentistry, including diagnosis, treatment planning, and restoration; encompassing a range of technologies, including computer-aided design/computer-aided manufacturing (CAD/CAM), three-dimensional (3D) printing, artificial intelligence (AI), augmented reality (AR), and teledentistry; a rapidly evolving and transformative field. This review article explores the evolution of digital dentistry, including advancements in imaging, CAD/CAM, 3D printing, and regenerative dentistry, amongst others. It discusses current and future applications of digital dentistry, such as AI, AR, and teledentistry. The potential benefits and challenges associated with these applications are also examined, including their impact on patient privacy, dental education, and the overall practice of dentistry and oral surgery. Indeed, digital dentistry has transformed the way we diagnose, plan, and treat our patients. In other words, the use of digital technologies in dentistry has allowed for greater precision, accuracy, and efficiency, while also improving patient outcomes. An overview of the history and current state of digital dentistry, as well as a discussion of future developments in the field is presented, in addition to examining benefits, limitations, ethical considerations, and the importance of staying up-to-date with the latest advancements in the rapidly evolving field. To simplify concepts and approaches, real-life examples of how digital dentistry is being used in modern dental practices are also provided to the reader.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs28', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/9f9dde49901521a0356064b7587cec29e956c77e" target="_blank">Knowledge, awareness, and perception of digital dentistry among Egyptian dentists: a cross-sectional study</a><br>
+                            <small style="color: #333;">M. A. Hall, Inas Karawia, A. Z. Mahmoud, O. S. Mohamed | 2023</small><br>
+                            <p id="abs28" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Background Digital dentistry has revolutionized the way dental treatment is offered to patients. It became essential for dental practitioners to be well-informed about this technology to improve the quality of care offered and increase patient satisfaction. This study aimed to assess the level of knowledge, awareness, and perception of Egyptian dentists toward digital dentistry. Methods An online-based cross-sectional study was conducted using social media platforms from November 2022 to March 2023. Our study sample included dentists with different levels of experience, specialties, and working in different health sectors in Egypt. A questionnaire arranged in 4 sections and 23 questions was used as the study data collection tool. The data were tabulated and analyzed using SPSS software. Results A total of 402 participants filled out this questionnaire. 50.7% of which were females, 42.8% were between 20–29 years old and 42.3% were general practitioners. Furthermore, the main practice of 27.6% was in governmental dental clinics. Moreover, 47.3% and 64.2% of participants had Moderate knowledge and awareness respectively. While 75.9% of them had a high perception of practicing digital dentistry. Females and practitioners in governmental clinics had significantly lower awareness scores, while faculty teaching staff had significantly higher scores ( P  ≤ 0.05). On the other hand, practicing in the Great Cairo region and urban areas was associated with significantly higher knowledge scores ( P  ≤ 0.05). Similarly, Prosthodontists, periodontists, and restorative dentists had significantly higher scores when compared with general dentists ( P  ≤ 0.05). Conclusions About half of the study participants had Moderate knowledge and awareness levels, while about three-quarters of them had a high level of perception toward practicing digital dentistry. Therefore, more attention should be given to providing dental education programs in this important field at both the undergraduate and postgraduate levels by policymakers.</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs29', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/e8adf4773bbfbbb2e4da4185b7d363a6c2b958d8" target="_blank">Digital Dentistry</a><br>
+                            <small style="color: #333;">Joseph Edward | 2024</small><br>
+                            <p id="abs29" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">No abstract available</p>
+                </li>
+            <li>
+                            <button onclick="toggle_abstract('abs30', this)">▼</button>
+                            <a href="https://www.semanticscholar.org/paper/60cdadd9cacbbbaf183242ea20c9ee89cbb9de60" target="_blank">Evaluation of the Effect of Digital Dentistry on the Accuracy of Implant Placement and Prosthesis Fabrication—A Systematic Review and Meta-Analysis</a><br>
+                            <small style="color: #333;">Naveen Reddy, S. Vempalli, Jayant Prakash, M. Suganna, Srinivasa Iyer Meenakshi, G. Shivakumar, S. Crimi, G. Minervini | 2023</small><br>
+                            <p id="abs30" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Digital dentistry has gained significant attention in recent years due to its potential to improve the accuracy of implant placement and prosthesis fabrication. However, the literature on its effectiveness remains controversial, and a systematic review and meta-analysis are necessary to evaluate the available evidence. A comprehensive search was conducted across multiple online databases using MeSH keywords and Boolean operators. Data extraction was performed, and a bias assessment was conducted based on modified CONSORT guidelines. The pooled odds ratios (OR) and risk ratios (RR) and corresponding 95% confidence intervals (CI) were then calculated. Five studies met the inclusion criteria. The overall analysis showed no statistically significant difference in the accuracy of implant placement and prosthesis fabrication between digital and conventional techniques (OR: 0.95, 95% CI: 0.73 to 1.23 and RR: 0.95, 95% CI: 0.73 to 1.23). Subgroup analysis based on individual studies did not demonstrate consistent results. This review suggests that digital techniques do not significantly impact the accuracy of implant placement and prosthesis fabrication compared to conventional techniques in an in vitro setting. However, the overall evidence is limited by the small number of studies and the heterogeneity observed. Future well-designed studies, including randomized controlled trials and clinical studies, are needed to provide more robust evidence on the effectiveness of digital dentistry in clinical practice.</p>
+                </li>
+
+                </ul>
+        
+            <h1>arXiv</h1>
+            <ul>
+                <li>
+                            <button onclick="toggle_abstract('abs31', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2306.03025v2" target="_blank">AI Techniques for Cone Beam Computed Tomography in Dentistry: Trends and
+  Practices</a><br>
+                            <small style="color: #333;">Saba Sarwar, Suraiya Jabin | 2023-06-05T16:45:39Z</small><br>
+                            <p id="abs31" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Cone-beam computed tomography (CBCT) is a popular imaging modality in
+dentistry for diagnosing and planning treatment for a variety of oral diseases
+with the ability to produce detailed, three-dimensional images of the teeth,
+jawbones, and surrounding structures. CBCT imaging has emerged as an essential
+diagnostic tool in dentistry. CBCT imaging has seen significant improvements in
+terms of its diagnostic value, as well as its accuracy and efficiency, with the
+most recent development of artificial intelligence (AI) techniques. This paper
+reviews recent AI trends and practices in dental CBCT imaging. AI has been used
+for lesion detection, malocclusion classification, measurement of buccal bone
+thickness, and classification and segmentation of teeth, alveolar bones,
+mandibles, landmarks, contours, and pharyngeal airways using CBCT images.
+Mainly machine learning algorithms, deep learning algorithms, and
+super-resolution techniques are used for these tasks. This review focuses on
+the potential of AI techniques to transform CBCT imaging in dentistry, which
+would improve both diagnosis and treatment planning. Finally, we discuss the
+challenges and limitations of artificial intelligence in dentistry and CBCT
+imaging.</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs32', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2308.14070v1" target="_blank">DETDet: Dual Ensemble Teeth Detection</a><br>
+                            <small style="color: #333;">Kyoungyeon Choi, Jaewon Shin, Eunyi Lyou | 2023-08-27T11:04:26Z</small><br>
+                            <p id="abs32" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">The field of dentistry is in the era of digital transformation. Particularly,
+artificial intelligence is anticipated to play a significant role in digital
+dentistry. AI holds the potential to significantly assist dental practitioners
+and elevate diagnostic accuracy. In alignment with this vision, the 2023 MICCAI
+DENTEX challenge aims to enhance the performance of dental panoramic X-ray
+diagnosis and enumeration through technological advancement. In response, we
+introduce DETDet, a Dual Ensemble Teeth Detection network. DETDet encompasses
+two distinct modules dedicated to enumeration and diagnosis. Leveraging the
+advantages of teeth mask data, we employ Mask-RCNN for the enumeration module.
+For the diagnosis module, we adopt an ensemble model comprising DiffusionDet
+and DINO. To further enhance precision scores, we integrate a complementary
+module to harness the potential of unlabeled data. The code for our approach
+will be made accessible at https://github.com/Bestever-choi/Evident</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs33', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2307.03686v1" target="_blank">A review of dental informatics : current trends and future directions</a><br>
+                            <small style="color: #333;">Prabath Jayatissa, Roshan Hewapathirane | 2023-06-29T11:27:38Z</small><br>
+                            <p id="abs33" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Dental informatics is a rapidly evolving field that combines dentistry with
+information technology to improve oral health care delivery, research, and
+education. Electronic health records (EHRs), telehealth, digital imaging, and
+other digital tools have revolutionised how dental professionals diagnose,
+treat, and manage oral health conditions. In this review article, we will
+explore dental informatics's current trends and future directions, focusing on
+its impact on clinical practice, research, and education. We will also discuss
+the challenges and opportunities associated with implementing dental
+informatics and highlight fundamental research studies and innovations in the
+field.</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs34', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2304.03556v1" target="_blank">Construction of unbiased dental template and parametric dental model for
+  precision digital dentistry</a><br>
+                            <small style="color: #333;">Lei Ma, Jingyang Zhang, Ke Deng, Peng Xue, Zhiming Cui, Yu Fang, Minhui Tang, Yue Zhao, Min Zhu, Zhongxiang Ding, Dinggang Shen | 2023-04-07T09:39:03Z</small><br>
+                            <p id="abs34" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Dental template and parametric dental models are important tools for various
+applications in digital dentistry. However, constructing an unbiased dental
+template and accurate parametric dental models remains a challenging task due
+to the complex anatomical and morphological dental structures and also low
+volume ratio of the teeth. In this study, we develop an unbiased dental
+template by constructing an accurate dental atlas from CBCT images with
+guidance of teeth segmentation. First, to address the challenges, we propose to
+enhance the CBCT images and their segmentation images, including image
+cropping, image masking and segmentation intensity reassigning. Then, we
+further use the segmentation images to perform co-registration with the CBCT
+images to generate an accurate dental atlas, from which an unbiased dental
+template can be generated. By leveraging the unbiased dental template, we
+construct parametric dental models by estimating point-to-point correspondences
+between the dental models and employing Principal Component Analysis to
+determine shape subspaces of the parametric dental models. A total of 159 CBCT
+images of real subjects are collected to perform the constructions.
+Experimental results demonstrate effectiveness of our proposed method in
+constructing unbiased dental template and parametric dental model. The
+developed dental template and parametric dental models are available at
+https://github.com/Marvin0724/Teeth_template.</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs35', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2411.03725v1" target="_blank">PX2Tooth: Reconstructing the 3D Point Cloud Teeth from a Single
+  Panoramic X-ray</a><br>
+                            <small style="color: #333;">Wen Ma, Huikai Wu, Zikai Xiao, Yang Feng, Jian Wu, Zuozhu Liu | 2024-11-06T07:44:04Z</small><br>
+                            <p id="abs35" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Reconstructing the 3D anatomical structures of the oral cavity, which
+originally reside in the cone-beam CT (CBCT), from a single 2D Panoramic
+X-ray(PX) remains a critical yet challenging task, as it can effectively reduce
+radiation risks and treatment costs during the diagnostic in digital dentistry.
+However, current methods are either error-prone or only trained/evaluated on
+small-scale datasets (less than 50 cases), resulting in compromised
+trustworthiness. In this paper, we propose PX2Tooth, a novel approach to
+reconstruct 3D teeth using a single PX image with a two-stage framework. First,
+we design the PXSegNet to segment the permanent teeth from the PX images,
+providing clear positional, morphological, and categorical information for each
+tooth. Subsequently, we design a novel tooth generation network (TGNet) that
+learns to transform random point clouds into 3D teeth. TGNet integrates the
+segmented patch information and introduces a Prior Fusion Module (PFM) to
+enhance the generation quality, especially in the root apex region. Moreover,
+we construct a dataset comprising 499 pairs of CBCT and Panoramic X-rays.
+Extensive experiments demonstrate that PX2Tooth can achieve an Intersection
+over Union (IoU) of 0.793, significantly surpassing previous methods,
+underscoring the great potential of artificial intelligence in digital
+dentistry.</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs36', this)">▼</button>
+                            <a href="http://arxiv.org/abs/1211.5820v1" target="_blank">A bird's-eye view of scientific trading: Dependency relations among
+  fields of science</a><br>
+                            <small style="color: #333;">Erjia Yan, Ying Ding, Blaise Cronin, Loet Leydesdorff | 2012-11-25T23:22:05Z</small><br>
+                            <p id="abs36" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">We use a trading metaphor to study knowledge transfer in the sciences as well
+as the social sciences. The metaphor comprises four dimensions: (a) Discipline
+Self-dependence, (b) Knowledge Exports/Imports, (c) Scientific Trading
+Dynamics, and (d) Scientific Trading Impact. This framework is applied to a
+dataset of 221 Web of Science subject categories. We find that: (i) the
+Scientific Trading Impact and Dynamics of Materials Science And Transportation
+Science have increased; (ii) Biomedical Disciplines, Physics, And Mathematics
+are significant knowledge exporters, as is Statistics & Probability; (iii) in
+the social sciences, Economics, Business, Psychology, Management, And Sociology
+are important knowledge exporters; (iv) Discipline Self-dependence is
+associated with specialized domains which have ties to professional practice
+(e.g., Law, Ophthalmology, Dentistry, Oral Surgery & Medicine, Psychology,
+Psychoanalysis, Veterinary Sciences, And Nursing).</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs37', this)">▼</button>
+                            <a href="http://arxiv.org/abs/1707.06675v1" target="_blank">Tweeting about journal articles: Engagement, marketing or just
+  gibberish?</a><br>
+                            <small style="color: #333;">Nicolas Robinson-Garcia, Rakshit Trivedi, Rodrigo Costas, Kimberley Isett, Julia Melkers, Diana Hicks | 2017-07-20T18:55:16Z</small><br>
+                            <p id="abs37" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">This paper presents preliminary results on the analysis of tweets to journal
+articles in the field of Dentistry. We present two case studies in which we
+critically examine the contents and context that motivate the tweeting of
+journal articles. We then focus on a specific aspect, the role played by
+journals on self-promoting their contents and the effect this has on the total
+number of tweets their papers produce. In a context where many are pushing to
+the use of altmetrics as an alternative or complement to traditional
+bibliometric indicators. We find a lack of evidence (and interest) on
+critically examining the many claims that are being made as to their capability
+to trace evidences of 'broader forms of impact'. Our first results are not
+promising and question current approaches being made in the field of
+altmetrics.</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs38', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2005.08254v2" target="_blank">Analyzing the relationship between text features and research proposal
+  productivity</a><br>
+                            <small style="color: #333;">Jorge A. V. Tohalino, Laura V. C. Quispe, Diego R. Amancio | 2020-05-17T13:51:55Z</small><br>
+                            <p id="abs38" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Predicting the output of research grants is of considerable relevance to
+research funding bodies, scientific entities and government agencies. In this
+study, we investigate whether text features extracted from projects title and
+abstracts are able to identify productive grants. Our analysis was conducted in
+three distinct areas, namely Medicine, Dentistry and Veterinary Medicine.
+Topical and complexity text features were used to identify predictors of
+productivity. The results indicate that there is a statistically significant
+relationship between text features and grants productivity, however such a
+dependence is weak. A feature relevance analysis revealed that the abstract
+text length and metrics derived from lexical diversity are among the most
+discriminative features. We also found that the prediction accuracy has a
+dependence on the considered project language and that topical features are
+more discriminative than text complexity measurements. Our findings suggest
+that text features should be used in combination with other features to assist
+the identification of relevant research ideas.</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs39', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2104.08886v1" target="_blank">Convolutional Neural Networks in Orthodontics: a review</a><br>
+                            <small style="color: #333;">Szymon Płotka, Tomasz Włodarczyk, Ryszard Szczerba, Przemysław Rokita, Patrycja Bartkowska, Oskar Komisarek, Artur Matthews-Brzozowski, Tomasz Trzciński | 2021-04-18T16:02:30Z</small><br>
+                            <p id="abs39" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Convolutional neural networks (CNNs) are used in many areas of computer
+vision, such as object tracking and recognition, security, military, and
+biomedical image analysis. This review presents the application of
+convolutional neural networks in one of the fields of dentistry - orthodontics.
+Advances in medical imaging technologies and methods allow CNNs to be used in
+orthodontics to shorten the planning time of orthodontic treatment, including
+an automatic search of landmarks on cephalometric X-ray images, tooth
+segmentation on Cone-Beam Computed Tomography (CBCT) images or digital models,
+and classification of defects on X-Ray panoramic images. In this work, we
+describe the current methods, the architectures of deep convolutional neural
+networks used, and their implementations, together with a comparison of the
+results achieved by them. The promising results and visualizations of the
+described studies show that the use of methods based on convolutional neural
+networks allows for the improvement of computer-based orthodontic treatment
+planning, both by reducing the examination time and, in many cases, by
+performing the analysis much more accurately than a manual orthodontist does.</p>
+            </li>
+            <li>
+                            <button onclick="toggle_abstract('abs40', this)">▼</button>
+                            <a href="http://arxiv.org/abs/2106.10700v1" target="_blank">On predicting research grants productivity</a><br>
+                            <small style="color: #333;">Jorge A. V. Tohalino, Diego R. Amancio | 2021-06-20T14:21:46Z</small><br>
+                            <p id="abs40" style="margin-top: 8px; color: #333; font-size: 15px; line-height: 1.5;">Understanding the reasons associated with successful proposals is of
+paramount importance to improve evaluation processes. In this context, we
+analyzed whether bibliometric features are able to predict the success of
+research grants. We extracted features aiming at characterizing the academic
+history of Brazilian researchers, including research topics, affiliations,
+number of publications and visibility. The extracted features were then used to
+predict grants productivity via machine learning in three major research areas,
+namely Medicine, Dentistry and Veterinary Medicine. We found that research
+subject and publication history play a role in predicting productivity. In
+addition, institution-based features turned out to be relevant when combined
+with other features. While the best results outperformed text-based attributes,
+the evaluated features were not highly discriminative. Our findings indicate
+that predicting grants success, at least with the considered set of
+bibliometric features, is not a trivial task.</p>
+            </li>
+
+                </ul>
+        
+        </div>
+    </body>
+</html>
